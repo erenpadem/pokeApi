@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@500&family=Prata&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+    background-image: linear-gradient(to left, rgb(221, 4, 4), rgba(255, 60, 0, 0.993));
+}
+
+body h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size:3.5rem;
+    margin-top: 4rem;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+input,
+button {
+    padding: 15px 30px;
+    background: #fff;
+    border: none;
+    font-size: 1.2rem;
+   
+
+}
+
+input:focus {
+    outline: none;
+   
+}
+input{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+button {
+    cursor: pointer;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.poke-container {
+    display: flex;
+    width: 100%;
+    padding: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(255, 255, 255, 0.644);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poke-box {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: -1px -1px 7px -1px rgba(122, 122, 122, 0.26);
+    -webkit-box-shadow: -1px -1px 7px -1px rgba(122, 122, 122, 0.26);
+    -moz-box-shadow: -1px -1px 7px -1px rgba(122, 122, 122, 0.26);
+    transition: all 0.2s;
+}
+
+.poke-box img {
+    width: 80%;
+    margin: 10px 0;
+    filter: drop-shadow(5px 5px 5px rgb(116, 116, 116));
+}
+.poke-box:hover {
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0,.5));
+}
+
+.poke-name {
+    font-size: 1.4rem;
+    margin: 5px auto;
+}
+
+.poke-box p {
+    margin-bottom: 5px auto;
+}
+
